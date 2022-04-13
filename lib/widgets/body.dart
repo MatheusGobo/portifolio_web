@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portifolio_web/utils/util.dart';
 import 'widgets.dart';
 
 class Body extends StatelessWidget {
@@ -74,7 +75,9 @@ class Body extends StatelessWidget {
                                 child: ContactButton(
                                   butonText: 'Drop me a line',
                                   icon: const Icon(Icons.mail_outline),
-                                  onPressed: () => print('object')
+                                  onPressed: () {
+                                    launchMailto();
+                                  }
                                 ),
                               ),
                             )

@@ -24,7 +24,9 @@ class ContactButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(24.0)
           )
         ),
-        onPressed: onPressed(),
+        onPressed: () {
+          onPressed();
+        },
         icon: Padding(
           padding: const EdgeInsets.all(8.0),
           child: icon,

@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:portifolio_web/utils/util.dart';
 import '../widgets/widgets.dart';
 
 class Portfolio extends StatelessWidget {
@@ -39,7 +40,9 @@ class Portfolio extends StatelessWidget {
             ContactButton(
               butonText: 'Contact me',
               icon: const Icon(Icons.send_sharp),
-              onPressed: () {}
+              onPressed: () {
+                launchMailto();
+              }
             )
           ],
       ),
